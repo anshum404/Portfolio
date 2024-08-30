@@ -1,0 +1,315 @@
+*,ul,li{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: #000;
+}
+h1, h2, h3, p, span{
+    color: #fff;
+}
+.width-center{
+    max-width: 1180px;
+    margin: auto;
+    padding-top: 200px;
+}
+.width-center:first-of-type{
+    padding-top: 150px;
+}
+h1{
+    font-family: "poppins";
+}
+h2{
+    font-size: 38px;
+    font-family: "poppins";
+    line-height: 46px;
+}
+p{
+    font-size: 22px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+
+.primary-cta{
+    display: block;
+    font-size:22px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    color: #fff;
+    font-weight: 700;
+}
+.primary-cta:hover{
+    background-color: white;
+    color: #1b1429;
+}
+
+
+
+/* Particle animation */
+#particles{
+    position: fixed;
+    z-index: -1;
+    filter: blur(3px);
+}
+#webcoderskull{
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+canvas{
+    height: 100vh;
+    /* background-color: #000; */
+    background: linear-gradient(270deg,#1b1429,#140f23);
+}
+#webcoderskull h1{
+  letter-spacing: 5px;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.pg-canvas{
+    width: 100vw;
+}
+
+/* Sticky Header */
+.stick-header{
+    z-index: 99;
+    padding: 12px 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+.stick-header.scrolled{
+    backdrop-filter: blur(15px) !important;
+    background-color: #1b1a2ea9 !important;
+    box-shadow: 0 10px 10px 0 rgba(9, 5, 29, .171) !important;
+}
+.sticky-head-left{
+    display: flex;
+    align-items: center;
+}
+.sticky-head-left a{
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 0%;
+    font-size: 24px;
+}
+.sticky-head-left img{
+    width: 30px;
+    margin-top: -2px;
+}
+.sticky-head-right ul{
+    display: flex;
+}
+.sticky-head-right li{
+    list-style: none;
+    margin: 0 20px;
+}
+.sticky-head-right a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "poppins";
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 25px;
+    background: #ffffff;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 1024px) {
+    .sticky-head-right ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333; /* Same as header background */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .sticky-head-right ul.active {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .primary-cta{
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+/* Image tilt effect */
+.image-tilt-effect{
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); */
+    position: relative;
+}
+/* footer */
+.footer{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.footer h3{
+    font-size: 32px;
+}
+.social-media-container{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+.social-logo-image img{
+    width: 40px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .width-center{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .width-center{
+        max-width: 100%
+    }
+
+    /* footer */
+    .footer h3{
+        font-size: 24px;
+    }
+    .social-logo-image img{
+        width: 50px;
+        margin: 0 4px;
+    }
+    .primary-cta{
+        font-size: 24px;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+.exp-carousel-container{
+    width: 60%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.exp-car-wrap{
+    display: flex;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+.exp-car-wrap img {
+    width: 100%;
+}
+.exp-car-ind{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.exp-car-ind span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.exp-car-ind span.active{
+    width: 15px;
+    height: 6px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+.exp-carousel-container{
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+}
+
+
+
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Popup content */
+.popup-content {
+    position: relative;
+    margin: 150px auto 0;
+    width: min-content;
+}
+
+/* Close button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1 !important;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}

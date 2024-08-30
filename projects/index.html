@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="../resources/about/avatar_me.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- typing animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" crossorigin="anonymous"></script>
+
+    <!-- particle animation -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- stylings -->
+    <link rel="stylesheet" href="../styling/common.css">
+</head>
+<body>
+    <!-- for particle animation -->
+    <div id="particles">
+      <div id="webcoderskull">
+      </div>
+    </div>
+
+
+
+
+    <!-- Popup HTML -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <iframe id="youtube-video" width="700" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+    <!-- sticky-header -->
+    <div class="stick-header">
+        <div class="sticky-head-left"><a href="https://mughesh.github.io/Mugesh-Portfolio"><img src="../resources/about/avatar_me.png" alt="Mugesh"> <span>Mugesh</span></a></div>
+        <div class="sticky-head-right">
+            <ul>
+                <li><a href="https://mughesh.github.io/Mugesh-Portfolio/about/">About</a></li>
+                <li><a href="https://mughesh.github.io/Mugesh-Portfolio/experience/">Experience</a></li>
+                <li><a href="https://mughesh.github.io/Mugesh-Portfolio/projects/">Projects</a></li>
+                <li><a href="https://mughesh.github.io/Mugesh-Portfolio/resume/">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".sticky-head-right ul");
+
+            hamburger.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+            const header = document.querySelector(".stick-header");
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 70) {
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
+
+
+    <section class="my-projects width-center">
+        <h1><b>My <b style="color: #c660f9;">Works </b></b></h1>
+        <div class="project-wrapper">
+            <h2><b>AR Prototypes - BEZI</b></h2>
+            <div class="project-container">
+                <div class="project-element" onclick="openPopup('https://www.youtube.com/embed/pFltFRQycE4?si=slFZzEeyCTiMxt-M?autoplay=0')" ><img src="../resources/projects/ornithopter.gif" alt=""><div class="item-title">Ornithopter from "DUNE"</div></div>
+                <div class="project-element" onclick="openPopup('https://www.youtube.com/embed/RCTisyD5arI?si=2jjz9wrz_ULCtoqG')" ><img src="../resources/projects/animus.png" alt=""><div class="item-title">The Animus Project</div></div>
+
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <h2><b>XR Experiences</b></h2>
+            <div class="project-container">
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/x_H5bdh77tI?si=Et759KV0rPN-Kw0m')" ><img src="../resources/projects/garden AR.gif" alt=""><div class="item-title">Garden AR</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/TODB9B_mKqc?si=oZGuymRH8XbaJWeG')" ><img src="../resources/projects/Heart.gif" alt=""><div class="item-title">Human Heart</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/gSuWp1RulLM?si=fUW6FZtZ8RFFPjX3')" ><img src="../resources/projects/dispersion of light.gif" alt=""><div class="item-title">Dispersion of Light</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/On7yNTTC9RU?si=a8TFSklxHqAGs_WW')" ><img src="../resources/projects/Motion.gif" alt=""><div class="item-title">Types of Motion </div></div>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <h2><b>Blender Works</b></h2>
+            <div class="project-container">
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/sTyG-_wxsvQ?si=tcXC1iyCOxOJOKsl')" ><img src="../resources/projects/drone.gif" alt=""><div class="item-title">The Drone</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/mqqOBd94STc?si=KN-u_CElItb-m4yZ')" ><img src="../resources/projects/mm wave.gif" alt=""><div class="item-title">MM Wave Scanner</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/VUIqPvyo2ss?si=7GcTdbfkihdzLlQm')" ><img src="../resources/projects/mission impossible.gif" alt=""><div class="item-title">MissionImpossible</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/cdLMQ5kRAFs?si=NoqziIW0QCKj21Ms')" ><img src="../resources/projects/hydropower.gif" alt=""><div class="item-title">Hydro Power Plant</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/2ut1fbrJmDk?si=S78vwKfiAhYKoXyp')" ><img src="../resources/projects/abstract liquid.gif" alt=""><div class="item-title">Abstract Liquid</div></div>
+                <div class="project-element"onclick="openPopup('https://www.youtube.com/embed/wg23HnTDOSw?si=2p77HcG5jPEzP1Y5')" ><img src="../resources/projects/abstract cube.gif" alt=""><div class="item-title">Abstract Cube</div></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer width-center">
+        <h3>Find me on</h3>
+        <div class="social-media-container">
+            <span class="social-logo-image"><a href="https://www.linkedin.com/in/mugesh-s-ba207017b/" target="_blank"><img src="../resources/footer/linkedin.png" alt="" srcset=""></a></span>
+            
+            <span class="social-logo-image"><a href="https://github.com/mughesh/" target="_blank"><img src="../resources/footer/github.png" alt="" srcset=""></a></span>
+            <span class="social-logo-image"><a href="https://www.instagram.com/blender_workshop/" target="_blank"><img src="../resources/footer/instagram.png" alt="" srcset=""></a></span>
+        </div>
+    </section>
+
+
+
+
+    <style>
+        .my-projects h1{
+            text-align: center;
+        }
+        .project-wrapper{
+            text-align: center;
+            margin-top: 70px;
+        }
+        .project-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-element{
+            max-width: 500px;
+            margin: 30px 30px 0;
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .project-element img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .item-title{
+            position: absolute;
+            background-color:  rgba(0, 0, 0, 0.8);
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+            font-size: 24px;
+            line-height: initial;
+            padding: 10px 0 15px 0;
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .item-title{
+                font-size: 14px;
+                padding: 5px 0 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function openPopup(videoUrl) {
+    var popup = document.getElementById('popup');
+    var video = document.getElementById('youtube-video');
+
+    popup.style.display = 'block';
+    video.src = videoUrl;
+
+    if (window.innerWidth < 764) {
+        // Remove the width and height attributes
+        document.querySelector('#youtube-video').setAttribute('width', '300px');
+        document.querySelector('#youtube-video').removeAttribute('height');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup');
+    var video = document.getElementById('youtube-video');
+    var closeBtn = document.getElementsByClassName('close')[0];
+
+    closeBtn.onclick = function() {
+        popup.style.display = 'none';
+        video.src = ''; // Stop the video when closing the popup
+    }
+
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+            video.src = ''; // Stop the video when clicking outside of the popup
+        }
+    }
+});
+
+    </script>
+    
+</body>
+<!-- particle script -->
+<script src="../script/particle-animation.js"></script>
+</html>
